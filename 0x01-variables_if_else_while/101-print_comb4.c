@@ -14,20 +14,20 @@ int main(void)
 		{
 			for (z = 50; z < 58; z++)
 			{
-					if (z > y && y > x)
+				if (z > y && y > x)
+				{
+					putchar(x);
+					putchar(y);
+					putchar(z);
+					if (x != 55 || y != 56)
 					{
-						putchar(x);
-						putchar(y);
-						putchar(z);
-						if (x != 55 || y != 56)
-						{
-							putchar(',');
-							putchar(' ');
-						}
+						putchar(',');
+						putchar(' ');
 					}
+				}
 			}
 		}
 	}
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }
