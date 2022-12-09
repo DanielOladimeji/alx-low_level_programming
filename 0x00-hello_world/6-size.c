@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /** 
- * main - prirnts the size of various types
+ *main - prirnts the size of various types
  *
- * Return: 0 if exited properly, non-zero otherwise
+ *Return: 0 if exited properly, non-zero otherwise
  */
 
 int main(void)
