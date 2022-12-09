@@ -17,4 +17,6 @@ int main(void)
 		}
 		az++;
 	}
+	putchar('\n');
+	return (0);
 }	
