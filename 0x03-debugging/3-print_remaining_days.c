@@ -12,7 +12,8 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	/** It's a leap year when it is divisible
+	/**
+	 * It's a leap year when it is divisible
 	 * by 100 and 400 or evenly by 4
 	 */
 	if ((year % 100 == 0 && year % 400 == 0) || (year % 4 == 0))
