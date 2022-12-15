@@ -35,5 +35,5 @@ int main(void)
 
 	printf("%d\n", max);
 
-	return(0);
+	return (0);
 }
