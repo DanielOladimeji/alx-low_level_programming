@@ -19,7 +19,7 @@ void rev_string(char *s)
 	for (i = 0; i < 1 / 2; ++i)
 	{
 		az = s[i];
-		s[i] = s[l - 1 - i]; /* -1 is used because the array starts from 0 */
+		s[i] = s[l - 1 - i]; /* -1 because the array starts from 0 */
 		s[l - 1 - i] = az;
 	}
 }
