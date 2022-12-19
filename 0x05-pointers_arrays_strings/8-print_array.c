@@ -5,7 +5,7 @@
  * followed by a new line
  *
  * @n: elements parameter
- * @a string parameter
+ * @a: string parameter
  *
  * Return: Nothing
  */
