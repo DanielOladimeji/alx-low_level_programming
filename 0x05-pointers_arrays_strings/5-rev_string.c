@@ -16,7 +16,7 @@ void rev_string(char *s)
 		;
 
 	/* swap the string b\y looping to half the string */
-	for (i = 0; i < 1 / 2; ++i)
+	for (i = 0; i < l / 2; ++i)
 	{
 		az = s[i];
 		s[i] = s[l - 1 - i]; /* -1 because the array starts from 0 */
