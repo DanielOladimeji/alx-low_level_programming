@@ -40,7 +40,7 @@ void printHexes(char *b, int start, int end)
  * @start: starting position
  * @end: ending position
  */
-void printASCII(char *b, int start, int end);
+void printASCII(char *b, int start, int end)
 {
 	int ch, i = 0;
 
@@ -49,8 +49,8 @@ void printASCII(char *b, int start, int end);
 		ch = *(b + i + start);
 		if (!isPrintableASCII(ch))
 			ch = 46;
-		prntf("%c", ch);
-		i++
+		printf("%c", ch);
+		i++;
 	}
 }
 
@@ -69,7 +69,7 @@ void print_buffer(char *b, int size)
 		{
 			end = (size - start < 10) ? size - start : 10;
 			printf("%08x:", start);
-			printfHexes(b, start, end);
+			printHexes(b, start, end);
 			printASCII(b, start, end);
 			printf("\n");
 		}
