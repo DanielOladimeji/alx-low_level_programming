@@ -2,12 +2,11 @@
 #include "main.h"
 
 /**
- * *str_concat -  concatenates two strings
- *
+ * *str_concat - concatenates two strings
  * @s1: string to concatenate
- * @s2: string2 to contenate
+ * @s2: other string to concatenate
  *
- * Return: pointer to new string created (Success), NULL (Fails)
+ * Return: pointer to the new string created (Success), or NULL (Error)
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -16,7 +15,7 @@ char *str_concat(char *s1, char *s2)
 
 	while (s1 && s1[len1])
 		len1++;
-	while (s2 && s1[len2])
+	while (s2 && s2[len2])
 		len2++;
 
 	s3 = malloc(sizeof(char) * (len1 + len2 + 1));
@@ -31,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 		while (i < len1)
 		{
 			s3[i] = s1[i];
-			i++
+			i++;
 		}
 	}
 
@@ -44,7 +43,7 @@ char *str_concat(char *s1, char *s2)
 			j++;
 		}
 	}
-		s3[i] = '\0';
+	s3[i] = '\0';
 
-		return (s3);
+	return (s3);
 }
