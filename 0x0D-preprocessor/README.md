@@ -1,4 +1,5 @@
-0x0D-preprocessor Project
+0x0D. C - Preprocessor Project
+
 
 File 0-object_like_macro.h: This is a header file that defines a macro named SIZE as an abbreviation for the token 1024.
 
