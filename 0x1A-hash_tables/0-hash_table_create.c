@@ -7,25 +7,23 @@
 /**
  * hash_table_create - this function creates a hash table
  * @size: size of the array
+ *
  * Return: generated hash table
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *table;
 	unsigned long int i;
+	hash_table_t *HTable = (hash_table_t *)malloc(sizeof(hash_table_t));
 
-	table = malloc(sizeof(hash_table_t));
-	if (table == NULL)
+	if (HTable == NULL || size == 0)
+		return (NULL);
+	HTable->size = size;
+	HTable->array = (hash_node_t **)calloc(HTable->size, sizeof(hash_node_t *));
+	if (HTable->array == NULL)
 		return (NULL);
 
-	table->size = size;
-	table->array = calloc(table->size, sizeof(hash_node_t *));
-	if (table->array == NULL)
-		return (NULL);
-	for (i = 0; i < table->size; i++)
-	{
-		table->array[i] = NULL;
-	}
+	for (i = 0; i < HTable->size; i++)
+		HTable->array[i] = NULL;
 
-	return (table);
+	return (HTable);
 }
