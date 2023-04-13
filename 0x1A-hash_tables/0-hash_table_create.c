@@ -22,7 +22,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hashTable->array = malloc(sizeof(*hashTable->array) * size);
 	if (hashTable->array == NULL)
 		return (NULL);
-	for (i = 0; i < size; i)
+	for (i = 0; i < size; i++)
 		hashTable->array[i] = NULL;
 
 	return (hashTable);
