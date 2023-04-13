@@ -19,7 +19,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 
 	hashTable->size = size;
-	hashTable->array = malloc(sizeof(*hashTable->array) * size);
+	hashTable->array = calloc(sizeof(*hashTable->array) * size);
 	if (hashTable->array == NULL)
 		return (NULL);
 	for (array_index = 0; array_index < size; array_index++)
