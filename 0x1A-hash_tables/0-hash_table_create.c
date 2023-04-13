@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include "hash_tables.h"
 
+
 /**
  * hash_table_create - this function creates a hash table
  * @size: size of the array
