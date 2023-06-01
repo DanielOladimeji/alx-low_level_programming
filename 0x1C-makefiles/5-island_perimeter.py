@@ -3,7 +3,13 @@
 
 
 def island_perimeter(grid):
+    """returns the perimeter on an island
+    grid is a list of list of integers:
+    0 represents a water zone
+    1 represents a land zone
+    """
     def count_edges(i, j):
+        """counts the number of shared sides with neighboring land cells"""
         edges = 0
         if i > 0 and grid[i - 1][j] == 1:
             edges += 1
